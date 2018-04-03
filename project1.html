@@ -11,10 +11,11 @@
 		<h1>JP's Maze Game</h1>
 		<h2>Instructions</h2>
 		
-	</header>
+	</head>
 
 	<table>
 		<tr id="row1">
+			<td class="firstColumn"></td>
 			<td></td>
 			<td></td>
 			<td></td>
@@ -27,11 +28,13 @@
 			<td></td>
 			<td></td>
 			<td></td>
-			<td></td>
-			<td>X</td>
-			<td>X</td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class="correctPath">
+			<td class="lastColumn" id="finish"></td>
 		</tr>
         <tr id="row2">
+        	<td class="firstColumn"></td>
     		<td></td>
 			<td></td>
 			<td></td>
@@ -43,12 +46,14 @@
 			<td></td>
 			<td></td>
 			<td></td>
-			<td></td>
-			<td>X</td>
-			<td>X</td>
-			<td></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
+			<td class="lastColumn"></td>
         </tr>
         <tr id="row3">
+        	<td class="firstColumn"></td>
         	<td></td>
 			<td></td>
 			<td></td>
@@ -60,12 +65,14 @@
 			<td></td>
 			<td></td>
 			<td></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
 			<td></td>
-			<td>X</td>
-			<td></td>
-			<td></td>
+			<td class="lastColumn"></td>
         </tr>
         <tr id="row4">
+        	<td class="firstColumn"></td>
         	<td></td>
 			<td></td>
 			<td></td>
@@ -76,183 +83,205 @@
 			<td></td>
 			<td></td>
 			<td></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
 			<td></td>
-			<td>X</td>
-			<td>X</td>
-			<td></td>
-			<td></td>
+			<td class="lastColumn"></td>
         </tr>
         <tr id="row5">
+        	<td class="firstColumn"></td>
         	<td></td>
+			<td class ="warningPath"></td>
+			<td class ="warningPath"></td>
+			<td class ="warningPath"></td>
 			<td></td>
 			<td></td>
 			<td></td>
 			<td></td>
 			<td></td>
 			<td></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
 			<td></td>
 			<td></td>
-			<td></td>
-			<td></td>
-			<td>X</td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td class="lastColumn"></td>
         </tr>
         <tr id="row6">
-        	<td></td>
-			<td>X</td>
-			<td>X</td>
-			<td>X</td>
+        	<td class="firstColumn"></td>
+        	<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class="correctPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
 			<td></td>
 			<td></td>
 			<td></td>
 			<td></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
 			<td></td>
 			<td></td>
-			<td>X</td>
-			<td>X</td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td class="lastColumn"></td>
         </tr>
         <tr id="row7">
-        	<td></td>
-			<td>X</td>
-			<td></td>
-			<td>X</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td>X</td>
+        	<td class="firstColumn"></td>
+        	<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
 			<td></td>
 			<td></td>
 			<td></td>
 			<td></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="lastColumn"></td>
         </tr>
         <tr id="row8">
-        	<td>X</td>
-			<td>X</td>
-			<td></td>
-			<td>X</td>
-			<td>X</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td>X</td>
+        	<td class="firstColumn" id="start"></td>
+        	<td class="correctPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
 			<td></td>
 			<td></td>
 			<td></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
 			<td></td>
+			<td></td>
+			<td></td>
+			<td class="lastColumn"></td>
         </tr>
         <tr id="row9">
-        	<td></td>
+        	<td class="firstColumn"></td>
+        	<td class ="warningPath"></td>
+			<td class ="warningPath"></td>
+			<td></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
 			<td></td>
 			<td></td>
 			<td></td>
-			<td>X</td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
 			<td></td>
 			<td></td>
 			<td></td>
-			<td></td>
-			<td></td>
-			<td>X</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td class="lastColumn"></td>
         </tr>
         <tr id="row10">
+        	<td class="firstColumn"></td>
         	<td></td>
 			<td></td>
 			<td></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
+			<td class ="warningPath"></td>
+			<td class ="warningPath"></td>
+			<td class ="warningPath"></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
 			<td></td>
-			<td>X</td>
 			<td></td>
 			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td>X</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td class="lastColumn"></td>
         </tr>
         <tr id="row11">
+        	<td class="firstColumn"></td>
         	<td></td>
 			<td></td>
 			<td></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class="correctPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
 			<td></td>
-			<td>X</td>
-			<td></td>
-			<td>X</td>
-			<td>X</td>
-			<td>X</td>
-			<td></td>
-			<td>X</td>
 			<td></td>
 			<td></td>
-			<td></td>
-			<td></td>
+			<td class="lastColumn"></td>
         </tr>
         <tr id="row12">
+        	<td class="firstColumn"></td>
         	<td></td>
 			<td></td>
 			<td></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
 			<td></td>
-			<td>X</td>
-			<td></td>
-			<td>X</td>
-			<td></td>
-			<td>X</td>
-			<td></td>
-			<td>X</td>
 			<td></td>
 			<td></td>
-			<td></td>
-			<td></td>
+			<td class="lastColumn"></td>
         </tr>
         <tr id="row13">
+        	<td class="firstColumn"></td>
         	<td></td>
 			<td></td>
 			<td></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class="correctPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
+			<td class="correctPath"></td>
+			<td class="correctPath"></td>
+			<td class="correctPath"></td>
+			<td class ="warningPath"></td>
 			<td></td>
-			<td>X</td>
-			<td>X</td>
-			<td>X</td>
-			<td></td>
-			<td>X</td>
-			<td>X</td>
-			<td>X</td>
 			<td></td>
 			<td></td>
-			<td></td>
-			<td></td>
+			<td class="lastColumn"></td>
         </tr>
         <tr id="row14">
+        	<td class="firstColumn"></td>
         	<td></td>
 			<td></td>
 			<td></td>
 			<td></td>
+			<td class ="warningPath"></td>
+			<td class ="warningPath"></td>
+			<td class ="warningPath"></td>
+			<td></td>
+			<td class ="warningPath"></td>
+			<td class ="warningPath"></td>
+			<td class ="warningPath"></td>
 			<td></td>
 			<td></td>
 			<td></td>
 			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td class="lastColumn"></td>
         </tr>
         <tr id="row15">
+        	<td class="firstColumn"></td>
         	<td></td>
 			<td></td>
 			<td></td>
@@ -268,6 +297,7 @@
 			<td></td>
 			<td></td>
 			<td></td>
+			<td class="lastColumn"></td>
         </tr>
     </table>
 

@@ -7,14 +7,39 @@ table {
 	margin-top: 100px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: auto 0;
 }
 
 table tr td {
 	width: 25px;
 	height: 25px;
-	background-color: grey;
+	background-color: rgba(0, 0, 0, .2);
 }
 
 tr {
 	margin: auto 0;
+}
+
+.firstColumn {
+	background-color: white;
+}
+
+.lastColumn {
+	background-color: white;
+}
+
+#start {
+	background-color: green;
+}
+
+#finish {
+	background-color: green;
+}
+
+.correctPath:hover {
+	background-color: green;
+}
+
+.warningPath:hover {
+	background-color: red;
 }
