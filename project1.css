@@ -13,7 +13,7 @@ table {
 table tr td {
 	width: 25px;
 	height: 25px;
-	background-color: rgba(0, 0, 0, .2);
+	background-color: rgba(0, 0, 0, .1);
 }
 
 tr {
@@ -36,8 +36,13 @@ tr {
 	background-color: green;
 }
 
+.correctPath {
+	-webkit-transition: 5s;
+}
+
 .correctPath:hover {
 	background-color: green;
+	-webkit-transition: .5s;
 }
 
 .warningPath:hover {
