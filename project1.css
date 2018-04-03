@@ -11,13 +11,17 @@ table {
 }
 
 table tr td {
-	width: 25px;
-	height: 25px;
+	width: 24px;
+	height: 24px;
 	background-color: rgba(0, 0, 0, .1);
 }
 
 tr {
 	margin: auto 0;
+}
+
+td {
+	border-radius: 50%;
 }
 
 .firstColumn {
@@ -37,12 +41,12 @@ tr {
 }
 
 .correctPath {
-	-webkit-transition: 5s;
+	-webkit-transition: 10s;
 }
 
 .correctPath:hover {
 	background-color: green;
-	-webkit-transition: .5s;
+	-webkit-transition: .25s;
 }
 
 .warningPath:hover {
