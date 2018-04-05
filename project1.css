@@ -24,6 +24,20 @@ td {
 	border-radius: 50%;
 }
 
+#stopwatch {
+  width: 400px;
+  height: 100px;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 12px;
+
+  line-height: 100px;
+  font-size: 75px;
+  text-align: right;
+
+  margin-bottom: 20px;
+}
+
 .firstColumn {
 	background-color: white;
 }
@@ -40,12 +54,8 @@ td {
 	background-color: black;
 }
 
-/*look up a different way to keep the hover on.....maybe transform?
- but it needs to change to green so it can be communicated to js
- so that it turned green to add 1 to the empty sum 
- NEEDS TO COUNT SO PLAYER CAN REACH MIN GRN TILES TO ACHEIVE VICTORY*/
 /*.correctPath {
-	-webkit-transition: 100s;
+	background-color: green;
 }*/
 
 

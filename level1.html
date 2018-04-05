@@ -10,7 +10,15 @@
 		<h1>JP's Maze Game</h1>
 		<h2> Level 1</h2>
 		<h2>Instructions</h2>
-		
+		<ol>
+			<li>Press Start and follow the Green path to the Finish Line</li>
+			<li>Watch Out! the red tiles will warn you about falling off the maze and getting lost!!</li>
+			<li>Hurry before time runs out!</li>
+			<li> If time runs out or you fall off the maze...Game Over, try again!</li>
+		</ol>
+		<div id="stopwatch">
+      		3
+    	</div>
 	</header>
 
 	<table>
@@ -43,7 +51,9 @@
 			<td class="lastColumn"></td>
 		</tr>
 		<tr id="row3">
-			<td class="firstColumn" id="start"></td>
+			<td class="firstColumn">
+				<button id="startButton">Start</button>
+			</td>
 			<td class="correctPath"></td>
 			<td class="correctPath"></td>
 			<td class="correctPath"></td>
