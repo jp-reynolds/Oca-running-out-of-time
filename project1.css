@@ -44,21 +44,26 @@ td {
  but it needs to change to green so it can be communicated to js
  so that it turned green to add 1 to the empty sum 
  NEEDS TO COUNT SO PLAYER CAN REACH MIN GRN TILES TO ACHEIVE VICTORY*/
-.correctPath {
+/*.correctPath {
 	-webkit-transition: 100s;
-}
+}*/
 
 
 /*i think you need to have a webkit in both the hover and not hover for the transition to work*/
-.correctPath:hover {
+/*.correctPath:hover {
 	background-color: green;
 	-webkit-transition: .01s;
+}*/
+
+.hover {
+	background-color: green;
 }
 
 .warning {
-	-webkit-transition: .25s;
+	-webkit-transition: 4s;
 }
 
 .warning:hover {
 	background-color: red;
+	-webkit-transition: .01s;
 }

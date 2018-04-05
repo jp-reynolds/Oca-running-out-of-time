@@ -8,3 +8,9 @@
 
 //if a player moves outside of the red cells subtract 1 player life (10 to start)
 //when the player hovers over the finish square make a level passed for 1 and 2 and 'game won' for level 3.
+
+
+//this jquery will permanently add hover class after hover
+ $(".correctPath").on('mouseover', function () {
+     $(this).addClass("hover");
+ });
