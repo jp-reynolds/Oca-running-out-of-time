@@ -4,10 +4,11 @@ h1, h2 {
 }
 
 table {
-	margin-top: 100px;
+	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: auto 0;
+	border: 3px solid black;
 }
 
 table tr td {
@@ -24,18 +25,42 @@ td {
 	border-radius: 50%;
 }
 
+ol {
+	width: 400px;
+  	height: 50px;
+  	margin: 0 auto;
+  	border: 2px solid black;
+  	padding: 12px;
+	/*display: inline-block;*/
+	line-height: 10px;
+	font-size: 12px;
+	text-align: center;
+
+	margin-bottom: 5px;
+}
+
+li {
+	list-style: none;
+}
+
+footer {
+	text-align: center;
+	padding-top: 30px;
+	margin-bottom: 30px;
+}
+
 #stopwatch {
-  width: 400px;
-  height: 100px;
-  margin: 0 auto;
-  border: 1px solid black;
-  padding: 12px;
+	width: 75px;
+	height: 50px;
+	margin: 0 auto;
+	border: 2px solid black;
+	padding: 12px;
+	/*display: inline-block;*/
+	line-height: 50px;
+	font-size: 45px;
+	text-align: center;
 
-  line-height: 100px;
-  font-size: 75px;
-  text-align: right;
-
-  margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 
 .firstColumn {
@@ -46,34 +71,30 @@ td {
 	background-color: white;
 }
 
-#start {
-	background-color: green;
-}
 
 #finish {
 	background-color: black;
 }
 
+/*FOR TESTING this makes it so the path is always visible */
 /*.correctPath {
 	background-color: green;
 }*/
 
-
-/*i think you need to have a webkit in both the hover and not hover for the transition to work*/
-/*.correctPath:hover {
-	background-color: green;
-	-webkit-transition: .01s;
-}*/
-
-.hover {
+.correctPathHover {
 	background-color: green;
 }
 
-.warning {
+.warningHover {
+	background-color: red;
+}
+
+/*THESE MAKE THE RED TILES FADE AWAY QUICKLY KEEP FOR HARDER LEVELS*/
+/*.warning {
 	-webkit-transition: 4s;
 }
 
 .warning:hover {
 	background-color: red;
 	-webkit-transition: .01s;
-}
+}*/
