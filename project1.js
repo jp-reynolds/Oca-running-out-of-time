@@ -17,16 +17,28 @@ $(function() {
 	$('#startButton').click(function() {
 		//since this is in the #startButton click function it won't work until the start button is clicked
 		//when the mouse hovers over correctPath tiles it turns them green
-			$(".correctPath").on('mouseover', function () {
- 				$(this).addClass("correctPathHover");
+				var greenTiles = 0;
+				// $( "div.enterleave" )
+				//   .mouseenter(function() {
+				//     n += 1;
+				//     $( this ).find( "span" ).text( "mouse enter x " + n );
+				//   })
+				//   .mouseleave(function() {
+				//     $( this ).find( "span" ).text( "mouse leave" );
+				//   });
+
+			$(".correctPath").mouseenter( function () {
+				greenTiles += 1;
+ 				$(this).addClass("correctPathHover").find(".correctPath");
+ 				console.log(greenTiles);
  			});
 
- 			$(".warning").on('mouseover', function () {
+ 			$(".warning").mouseenter( function () {
  				$(this).addClass("warningHover");
  			});
 
 		//timer starts at this #
-		var sec = 3;
+		var sec = 5;
 		//setting a timer variable that communicates with the stopwatch decreasing by one second
 		var timer = setInterval(function () {
 			sec--;
@@ -34,10 +46,20 @@ $(function() {
 			//conditional statement, if seconds is 0 stop counting 
 			if (sec === 0) {
 				clearInterval(timer);
-				alert("Out of time, GAME OVER");
+				alert("Time's Up");
 			}
 		//if the seconds are above 0, keep decreasing	
 		}, 1000);
+
+		//this says level won when the cursor moves over the finish line
+		$("#finish").mouseenter( function () {
+			if (greenTiles > 15) {
+			clearInterval(timer);
+ 				alert("Level Won!");
+ 			}
+ 		});
+
+		// $(".correctPathHover" + ".warningHover")
 
 
 	});
