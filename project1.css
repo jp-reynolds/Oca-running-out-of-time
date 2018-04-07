@@ -77,13 +77,13 @@ footer {
 }
 
 /*FOR TESTING this makes it so the path is always visible */
-.correctPath {
+/*.correctPath {
 	background-color: green;
 }
 
 .warning {
 	background-color: red;
-}
+}*/
 
 .correctPathHover {
 	background-color: beige;
@@ -91,6 +91,10 @@ footer {
 
 .warningHover {
 	background-color: brown;
+}
+
+.treasure {
+	background-color: gold;
 }
 
 .reveal1
