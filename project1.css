@@ -9,12 +9,13 @@ table {
 	margin-right: auto;
 	margin-bottom: auto 0;
 	border: 3px solid black;
+	/*border-collapse: collapse;*/
 }
 
 table tr td {
 	width: 24px;
 	height: 24px;
-	background-color: rgba(0, 0, 0, .1);
+	background-color: rgba(0, 0, 0, .3);
 }
 
 tr {
@@ -22,7 +23,6 @@ tr {
 }
 
 td {
-	border-radius: 50%;
 }
 
 ol {
@@ -77,18 +77,23 @@ footer {
 }
 
 /*FOR TESTING this makes it so the path is always visible */
-/*.correctPath {
-	background-color: green;
-}*/
-
-.correctPathHover {
+.correctPath {
 	background-color: green;
 }
 
-.warningHover {
+.warning {
 	background-color: red;
 }
 
+.correctPathHover {
+	background-color: beige;
+}
+
+.warningHover {
+	background-color: brown;
+}
+
+.reveal1
 /*THESE MAKE THE RED TILES FADE AWAY QUICKLY KEEP FOR HARDER LEVELS*/
 /*.warning {
 	-webkit-transition: 4s;
