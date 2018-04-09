@@ -9,13 +9,13 @@ table {
 	margin-right: auto;
 	margin-bottom: auto 0;
 	border: 3px solid black;
-	/*border-collapse: collapse;*/
+	border-collapse: collapse;
 }
 
 table tr td {
 	width: 24px;
 	height: 24px;
-	background-color: rgba(0, 0, 0, .3);
+	
 }
 
 tr {
@@ -23,6 +23,9 @@ tr {
 }
 
 td {
+	background-color: rgba(0, 0, 0, 1);
+	-webkit-transition: 1s;
+
 }
 
 ol {
@@ -87,23 +90,15 @@ footer {
 
 .correctPathHover {
 	background-color: beige;
+	-webkit-transition: .5s;
 }
 
 .warningHover {
 	background-color: brown;
+	-webkit-transition: .5s;
 }
 
-.treasure {
+.treasureHover {
 	background-color: gold;
+	-webkit-transition: s;
 }
-
-.reveal1
-/*THESE MAKE THE RED TILES FADE AWAY QUICKLY KEEP FOR HARDER LEVELS*/
-/*.warning {
-	-webkit-transition: 4s;
-}
-
-.warning:hover {
-	background-color: red;
-	-webkit-transition: .01s;
-}*/
