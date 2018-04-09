@@ -1,10 +1,11 @@
 $(function() { 
+
 	//when the mouse moves over the space it changes the tile to green permanently
 	//when the start button is clicked it will start the countdown
 	$('#startButton').click(function() {
 
-		
-	
+		// $("div").css('cursor', 'zoom-in');
+		$(".cursor").css('cursor','url(link.png) 4 12, auto');
 //this reveals the appropriate colors for warning and correctPath.
 		//row 5 column 1
 		$( ".r6c1" ).mouseover(function() {
@@ -149,7 +150,7 @@ $(function() {
 		});
 
 		$( ".r3c7" ).mouseover(function() {
-			$('.reveal28.correctPath').addClass('treasureHover');
+			$('.reveal28.correctPath').addClass('shield');
 			$('.reveal28.warning').addClass('warningHover');
 		});
 
@@ -254,7 +255,7 @@ $(function() {
 		});
 
 		$( ".r14c13" ).mouseover(function() {
-			$('.reveal49.correctPath').addClass('correctPathHover');
+			$('.reveal49.correctPath').addClass('slingshot');
 			$('.reveal49.warning').addClass('warningHover');
 		});
 
@@ -339,7 +340,7 @@ $(function() {
 		});
 
 		$( ".r9c9" ).mouseover(function() {
-			$('.reveal66.correctPath').addClass('treasureHover');
+			$('.reveal66.correctPath').addClass('sword');
 			$('.reveal66.warning').addClass('warningHover');
 		});
 
@@ -418,17 +419,6 @@ $(function() {
 		 	console.log(treasureTiles);
 		 });
 
-		//when the mouse hovers over correctPath tiles it turns them green
-		// var greenTiles = 0;
-
-		// $(".correctPath").mouseenter( function () {
-		// 	greenTiles += 1;
- 	// 		var currentTreasureTile = $(this).addClass("treasure");
-
-			//counts the number of tiles hovered over to make sure they hit enough to win
- 			// currentCorrectTile.find(".correctPath");
- 			// console.log(greenTiles); 
-
 			//timer starts at this #
 			var sec = 100;
 			//setting a timer variable that communicates with the stopwatch decreasing by one second
@@ -445,7 +435,7 @@ $(function() {
 
 			//this says level won when the cursor moves over the finish line
 			$("#finish").mouseenter( function () {
-				if (treasureTiles >= 2 && sec > 0) {
+				if (treasureTiles >= 3 && sec > 0) {
 				clearInterval(timer);
  					alert("Level Won!");
  				}

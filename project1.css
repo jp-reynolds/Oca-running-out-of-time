@@ -1,6 +1,5 @@
 h1, h2 {
 	text-align: center;
-
 }
 
 table {
@@ -13,9 +12,8 @@ table {
 }
 
 table tr td {
-	width: 24px;
-	height: 24px;
-	
+	width: 28px;
+	height: 28px;
 }
 
 tr {
@@ -23,9 +21,9 @@ tr {
 }
 
 td {
-	background-color: rgba(0, 0, 0, 1);
-	-webkit-transition: 1s;
-
+	/*background-image: url('dirt.png');*/
+	/*background-color: rgba(73, 38, 8, .9);*/
+	background-color: rgba(0,0,0, .9);
 }
 
 ol {
@@ -76,29 +74,43 @@ footer {
 
 
 #finish {
-	background-color: black;
+	background-image: url('zelda.png');
+	background-color: white;
 }
 
 /*FOR TESTING this makes it so the path is always visible */
-/*.correctPath {
-	background-color: green;
+.correctPath {
+	background-image: url('road.png');
 }
 
 .warning {
-	background-color: red;
-}*/
-
+	background-image: url('trees2.png');
+	background-color: rgba(73, 38, 8, 1);
+}
+/*--------------------------------------------------------*/
 .correctPathHover {
-	background-color: beige;
-	-webkit-transition: .5s;
+	background-image: url('road.png');
 }
 
 .warningHover {
-	background-color: brown;
-	-webkit-transition: .5s;
+	background-image: url('trees2.png');
+	background-color: rgba(73, 38, 8, 1);
 }
 
-.treasureHover {
-	background-color: gold;
-	-webkit-transition: s;
+.slingshot {
+	background-image: url('slingshot.png');
+	background-repeat: no-repeat;
+	background-color: rgba(70, 35, 10, 1);
+}
+
+.shield {
+	background-image: url('Deku_Shield.png');
+	background-repeat: no-repeat;
+	background-color: rgba(70, 35, 10, 1);
+}
+
+.sword {
+	background-image: url('Kokiri_Sword.png');
+	background-repeat: no-repeat;
+	background-color: rgba(70, 35, 10, 1);
 }
