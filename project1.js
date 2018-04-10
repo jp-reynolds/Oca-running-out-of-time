@@ -455,8 +455,10 @@ $(function() {
 				//conditional statement, if seconds is 0 stop counting 
 				if (sec === 0) {
 					clearInterval(timer);
-					$('#triforce').append('YOU LOST!!');
-				}	
+					$('#triforce').append('YOU LOST!!').append('<button>Try Again?</button>');
+				}	$('button').click(function() {
+    					location.reload();
+					});
 			//if the seconds are above 0, keep decreasing	
 			}, 1000);
 
