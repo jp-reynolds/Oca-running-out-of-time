@@ -447,7 +447,7 @@ $(function() {
 		 });
 
 			//timer starts at this #
-			var sec = 45;
+			var sec = 60;
 			//setting a timer variable that communicates with the stopwatch decreasing by one second
 			var timer = setInterval(function () {
 				sec--;
