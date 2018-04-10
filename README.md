@@ -41,38 +41,37 @@ The game is styled with CSS.
 The functionality is created using jQuery
 
   HTML...
-  Header, instructions, and empty div boxes to put inventory and timer.
-  The HTML table was an easy way to organize the path and borders of my maze but made everything else difficult.
-  Each row has 16 cells and there are 16 rows. (first column is hidden and reserved for start and end cells)
-  Each cell has 3-5 classes associated with it to help CSS and jQuery identify what that particular cell is and what it does.
+  1.Header, instructions, and empty div boxes to put inventory and timer.
+  2.The HTML table was an easy way to organize the path and borders of my maze but made everything else difficult.
+  3.Each row has 16 cells and there are 16 rows. (first column is hidden and reserved for start and end cells)
+  4.Each cell has 3-5 classes associated with it to help CSS and jQuery identify what that particular cell is and what it does.
   Classes include:
-    -CorrectPath: actual road to travel on that lights up map when travelled on.
-    -Warning: the walls of the maze (trees that pop up)
-    -Reveal: a class spanning over multiple elements to include them in the LOS discovery when on a 'correctPath'
-    -cell position (r1c2 or row1column2) this tells jQuery what to do with this particular cell
-    -treasure (and if treasure what kind, ex.'deku shield') jQuery counts how many the player as travelled over to contribute to win logic
+    a. CorrectPath: actual road to travel on that lights up map when travelled on.
+    b. Warning: the walls of the maze (trees that pop up)
+    c. Reveal: a class spanning over multiple elements to include them in the LOS discovery when on a 'correctPath'
+    d. cell position (r1c2 or row1column2) this tells jQuery what to do with this particular cell
+    e. treasure (and if treasure what kind, ex.'deku shield') jQuery counts how many the player as travelled over to contribute to win logic
   
   CSS...
-  Pretty basic styling, classes have properties associated with them and are implemented in the browser. 
-  Floated the stopwatch and inventory divs to be aligned.
-  Some classes are created specifically to be added when jQuery calls on them pending an event.
-    -these have images associated with them and are added to HTML elements as the user discovers more of the map.
-    -It wouldn't make sense to have them already showing, then it wouldn't be a maze.
+  1. Pretty basic styling, classes have properties associated with them and are implemented in the browser. 
+  2. Floated the stopwatch and inventory divs to be aligned.
+  3. Some classes are created specifically to be added when jQuery calls on them pending an event.
+    a. these have images associated with them and are added to HTML elements as the user discovers more of the map.
+    b. It wouldn't make sense to have them already showing, then it wouldn't be a maze.
     
   jQuery...
-  I didn't want the maze to be discoverable before the timer starts. So almost all functionality is inculded in the start function
-  Start button- starts timer, changes mouse cursor to Link, and allows map to be discovered.
-  The discovery happens on a mouseover event and each cell in HTML has a specific class associated with them
-  The code is a bit repetitive but each cell does something different based on its position and what it is communicating around it.
-    -entering a cell will tell the reveal class to add a hidden CSS class to show either a path, a tree, or a item(treasure) to be picked up.
-    -there is a jQuery function for each cell that is a correct path.
-  A way to prevent cheating and to force the user to navigate the maze is to count and make sure they have picked up all the equipment to win.
-    -I have a mouseover event listener to count how many items they have picked up and in order to win they need 3.
-    -added on to counting the number of items, I also have an event listener on mouseleave that changes the class of the treasure cell to a tree 
-     to denote that the user picked it up and it is no longer on the map. This item also gets appended to the user's inventory
-  The last function is the timer, which decreases by seconds from 60 to 0.
-    -when it reaches 0, the user loses and the timer is stopped ('you lost' appended to page)
-    -If the player reaches the finish line, collects all 3 items, and beats the time, the timer will stop and a 'you win' will be appended to page.
+  1. I didn't want the maze to be discoverable before the timer starts. So almost all functionality is inculded in the start function
+  2. Start button- starts timer, changes mouse cursor to Link, and allows map to be discovered.
+  3. The discovery happens on a mouseover event and each cell in HTML has a specific class associated with them
+  4. The code is a bit repetitive but each cell does something different based on its position and what it is communicating around it.
+    a. entering a cell will tell the reveal class to add a hidden CSS class to show either a path, a tree, or a item(treasure) to be picked up.
+    b. there is a jQuery function for each cell that is a correct path.
+  5. A way to prevent cheating and to force the user to navigate the maze is to count and make sure they have picked up all the equipment to win.
+    a. I have a mouseover event listener to count how many items they have picked up and in order to win they need 3.
+    b. added on to counting the number of items, I also have an event listener on mouseleave that changes the class of the treasure cell to a tree to denote that the user picked it up and it is no longer on the map. This item also gets appended to the user's inventory
+  6. The last function is the timer, which decreases by seconds from 60 to 0.
+    a. when it reaches 0, the user loses and the timer is stopped ('you lost' appended to page)
+    b. If the player reaches the finish line, collects all 3 items, and beats the time, the timer will stop and a 'you win' will be appended to page.
    
 
 
