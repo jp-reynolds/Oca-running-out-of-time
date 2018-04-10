@@ -2,24 +2,33 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Level 3</title>
+	<title>Oca-running-out-of-time!</title>
 	<link rel="stylesheet" type="text/css" href="project1.css">
 </head>
 <body>
 	<header>
-		<h1>JP's Maze Game</h1>
-		<h2>Instructions</h2>
-		<ol>
+		<h1>Oca-running-out-of-time!</h1>
+		<ol id="instructions">
 			<li>Press Start and find your way through the Lost Woods!</li>
 			<li>Collect the slingshot along with the Kokiri sword and Deku shield</li>
 			<li>Hurry and save zelda before time runs out!</li>
 			<li></li>
 		</ol>
-		<h2>Level 3</h2>
-		<div id="stopwatch">
-      		5
-    	</div>
-		
+
+		<div class="container">
+			<div id="stopwatch">
+      			45
+    		</div>
+    		<div id="triforce">
+    			
+    		</div>
+			<div>
+				<ol id="equipment">
+					
+				</ol>
+			</div>
+		</div>
+
 	</header>
 	<div class="cursor">
 	<table>
@@ -81,18 +90,18 @@
 		</tr>
 		<tr id="row4">
 			<td class="firstColumn"></td>
-			<td class="warning"></td>
+			<td class="other"></td>
 			<td class="reveal11 warning"></td>
 			<td class="reveal11 r4c3 correctPath"></td>
 			<td class="reveal11 warning"></td>
 			<td class="reveal15 warning"></td>
 			<td class="reveal28 warning"></td>
-			<td class="reveal28 correctPath treasure"></td>
+			<td class="reveal28 correctPath treasure dekuShield"></td>
 			<td class="reveal28 warning"></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td class="other"></td>
+			<td class="other"></td>
+			<td class="other"></td>
+			<td class="other"></td>
 			<td class="reveal31 warning"></td>
 			<td class ="reveal29 warning"></td>
 			<td class="reveal29 r4c15 correctPath"></td>
@@ -111,7 +120,7 @@
 			<td class="reveal8 warning"></td>
 			<td class="reveal9 warning"></td>
 			<td class="reveal10 warning"></td>
-			<td class="warning"></td>
+			<td class="other"></td>
 			<td class="reveal31 warning"></td>
 			<td class="reveal30 r5c14 correctPath"></td>
 			<td class="reveal30 r5c15 correctPath"></td>
@@ -119,7 +128,7 @@
 		</tr>
 		<tr id="row6">
 			<td class="firstColumn">
-				<button id="startButton">Start</button>
+				<button id="startButton">GO</button>
 			</td>
 			<td class="reveal1 r6c1 correctPath"></td>
 			<td class="reveal1 r6c2 correctPath"></td>
@@ -132,7 +141,7 @@
 			<td class="reveal8 r6c9 correctPath"></td>
 			<td class="reveal9 r6c10 correctPath"></td>
 			<td class="reveal10 warning"></td>
-			<td class="warning"></td>
+			<td class="other"></td>
 			<td class="reveal31 warning"></td>
 			<td class="reveal31 warning"></td>
 			<td class="reveal32 r6c15 correctPath"></td>
@@ -159,15 +168,15 @@
 		</tr>
 		<tr id="row8">
 			<td class="firstColumn"></td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td class="other"></td>
+			<td class="other"></td>
+			<td class="other"></td>
 			<td class="reveal27 warning"></td>
 			<td class="reveal27 correctPath"></td>
 			<td class="reveal27 correctPath"></td>
 			<td class="reveal27 warning"></td>
 			<td class="reveal66 warning"></td>
-			<td class="reveal66 correctPath treasure"></td>
+			<td class="reveal66 correctPath treasure kokiriSword"></td>
 			<td class="reveal66 warning"></td>
 			<td class="reveal38 warning"></td>
 			<td class="reveal37 r8c12 correctPath"></td>
@@ -201,8 +210,8 @@
 			<td class="reveal78 r10c2 correctPath"></td>
 			<td class="reveal77 r10c3 correctPath"></td>
 			<td class="reveal77 warning"></td>
-			<td></td>
-			<td></td>
+			<td class="other"></td>
+			<td class="other"></td>
 			<td class="reveal64 warning"></td>
 			<td class="reveal64 correctPath"></td>
 			<td class="reveal64 r10c9 correctPath"></td>
@@ -220,8 +229,8 @@
 			<td class="reveal75 warning"></td>
 			<td class="reveal76 r11c3 correctPath"></td>
 			<td class="reveal76 warning"></td>
-			<td></td>
-			<td></td>
+			<td class="other"></td>
+			<td class="other"></td>
 			<td class="reveal63 warning"></td>
 			<td class="reveal63 r11c8 correctPath"></td>
 			<td class="reveal63 warning"></td>
@@ -239,8 +248,8 @@
 			<td class="reveal74 r12c2 correctPath"></td>
 			<td class="reveal74 r12c3 correctPath"></td>
 			<td class="reveal76 warning"></td>
-			<td></td>
-			<td></td>
+			<td class="other"></td>
+			<td class="other"></td>
 			<td class="reveal62 warning"></td>
 			<td class="reveal62 r12c8 correctPath"></td>
 			<td class="reveal62 warning"></td>
@@ -258,15 +267,15 @@
 			<td class="reveal73 r13c2 correctPath"></td>
 			<td class="reveal73 warning"></td>
 			<td class="reveal73 warning"></td>
-			<td></td>
-			<td></td>
+			<td class="other"></td>
+			<td class="other"></td>
 			<td class="reveal61 warning"></td>
 			<td class="reveal61 r13c8 correctPath"></td>
 			<td class="reveal61 warning"></td>
 			<td class="reveal54 warning"></td>
 			<td class="reveal54 r13c11 correctPath"></td>
 			<td class="reveal49 reveal54 warning"></td>
-			<td class="reveal49 correctPath treasure"></td>
+			<td class="reveal49 correctPath treasure slingShot"></td>
 			<td class="reveal43 warning"></td>
 			<td class="reveal43 r13c15 correctPath"></td>
 			<td class="reveal43 warning"></td>

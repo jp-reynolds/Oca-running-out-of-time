@@ -419,8 +419,35 @@ $(function() {
 		 	console.log(treasureTiles);
 		 });
 
+		 $('.dekuShield').mouseenter( function() {
+		 	$('ol#equipment').append('<li>Deku Shield</li>');
+
+		 	$('.dekuShield').mouseleave( function() {
+		 		$(this).removeClass('correctPath shield').addClass('other');
+		 		console.log(this);
+		 	});
+		 });
+
+		 $('.slingShot').mouseenter( function() {
+		 	$('ol#equipment').append('<li>Slingshot</li>');
+
+		 	$('.slingshot').mouseleave( function() {
+		 		$(this).removeClass('correctPath slingshot').addClass('other');
+		 		console.log(this);
+		 	});
+		 });
+
+		 $('.kokiriSword').mouseenter( function() {
+		 	$('ol#equipment').append('<li>Kokiri Sword</li>');
+
+		 	$('.kokiriSword').mouseleave( function() {
+		 		$(this).removeClass('correctPath sword').addClass('other');
+		 		console.log(this);
+		 	});
+		 });
+
 			//timer starts at this #
-			var sec = 100;
+			var sec = 45;
 			//setting a timer variable that communicates with the stopwatch decreasing by one second
 			var timer = setInterval(function () {
 				sec--;
