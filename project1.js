@@ -455,7 +455,7 @@ $(function() {
 				//conditional statement, if seconds is 0 stop counting 
 				if (sec === 0) {
 					clearInterval(timer);
-					alert("Time's Up");
+					$('#triforce').append('YOU LOST!!');
 				}	
 			//if the seconds are above 0, keep decreasing	
 			}, 1000);
@@ -464,7 +464,7 @@ $(function() {
 			$("#finish").mouseenter( function () {
 				if (treasureTiles >= 3 && sec > 0) {
 				clearInterval(timer);
- 					alert("Level Won!");
+ 					$('#triforce').append('YOU WIN!!');
  				}
  		});
 	});
