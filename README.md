@@ -45,12 +45,13 @@ HTML...
   2. The HTML table was an easy way to organize the path and borders of my maze but made everything else difficult.
   3. Each row has 16 cells and there are 16 rows. (first column is hidden and reserved for start and end cells)
   4. Each cell has 3-5 classes associated with it to help CSS and jQuery identify what that particular cell is and what it does.
+  
   Classes include:
     1. CorrectPath: actual road to travel on that lights up map when travelled on.
     2. Warning: the walls of the maze (trees that pop up)
     3. Reveal: a class spanning over multiple elements to include them in the LOS discovery when on a 'correctPath'
-    4. cell position (r1c2 or row1column2) this tells jQuery what to do with this particular cell
-    5. treasure (and if treasure what kind, ex.'deku shield') jQuery counts how many the player as travelled over to contribute to win logic
+    4. Cell position: (r1c2 or row1column2) this tells jQuery what to do with this particular cell
+    5. Treasure: (and if treasure what kind, ex.'deku shield') jQuery counts how many the player as travelled over to contribute to win logic
   
 CSS...
   1. Pretty basic styling, classes have properties associated with them and are implemented in the browser. 
