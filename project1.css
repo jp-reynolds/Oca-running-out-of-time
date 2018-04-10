@@ -20,9 +20,7 @@ h1 {
   	border: 2px solid black;
   	padding: 12px;
   	padding-bottom: 20px;
-	/*display: inline-block;*/
 	line-height: 13px;
-	font-weight: bold;
 	text-align: center;
 	background-color: #f8f0c5;
 	margin-bottom: 5px;
@@ -30,7 +28,7 @@ h1 {
 
 li.rules {
 	font-family: EB Garamond;
-	font-size: 14px;
+	font-size: 13px;
 	line-height: 16px;
 }
 
