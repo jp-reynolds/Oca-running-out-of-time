@@ -3,7 +3,7 @@ $(function() {
 	//when the mouse moves over the space it changes the tile to green permanently
 	//when the start button is clicked it will start the countdown
 	$('#startButton').click(function() {
-
+		$('#triforce').append('<p>*</p>');
 		// $("div").css('cursor', 'zoom-in');
 		$(".cursor").css('cursor','url(link.png) 4 12, auto');
 //this reveals the appropriate colors for warning and correctPath.
@@ -455,7 +455,7 @@ $(function() {
 				//conditional statement, if seconds is 0 stop counting 
 				if (sec === 0) {
 					clearInterval(timer);
-					$('#triforce').append('YOU LOST!!').append('<button>Try Again?</button>');
+					$('#triforce').empty().append('<span>YOU LOST!!</span>').append('<button>Try Again?</button>');
 				}	$('button').click(function() {
     					location.reload();
 					});
@@ -466,7 +466,7 @@ $(function() {
 			$("#finish").mouseenter( function () {
 				if (treasureTiles >= 3 && sec > 0) {
 				clearInterval(timer);
- 					$('#triforce').append('YOU WIN!!');
+ 					$('#triforce').empty().append('<span>YOU WIN!!</span>');
  				}
  		});
 	});
