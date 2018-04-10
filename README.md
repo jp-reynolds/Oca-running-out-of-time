@@ -45,7 +45,6 @@ HTML...
   2. The HTML table was an easy way to organize the path and borders of my maze but made everything else difficult.
   3. Each row has 16 cells and there are 16 rows. (first column is hidden and reserved for start and end cells)
   4. Each cell has 3-5 classes associated with it to help CSS and jQuery identify what that particular cell is and what it does.
-  
   Classes include:
     1. CorrectPath: actual road to travel on that lights up map when travelled on.
     2. Warning: the walls of the maze (trees that pop up)
