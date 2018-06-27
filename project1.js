@@ -423,7 +423,8 @@ $(function() {
 		 	$('ol#equipment').append('<li>Deku Shield</li>');
 
 		 	$('.dekuShield').mouseleave( function() {
-		 		$(this).removeClass('correctPath shield').addClass('other');
+		 		console.log(this);
+		 		$(this).removeClass('correctPath shield dekuShield treasure').addClass('other');
 		 		console.log(this);
 		 	});
 		 });
@@ -432,7 +433,7 @@ $(function() {
 		 	$('ol#equipment').append('<li>Slingshot</li>');
 
 		 	$('.slingshot').mouseleave( function() {
-		 		$(this).removeClass('correctPath slingshot').addClass('other');
+		 		$(this).removeClass('correctPath slingshot slingShot treasure').addClass('other');
 		 		console.log(this);
 		 	});
 		 });
@@ -468,7 +469,7 @@ $(function() {
 				clearInterval(timer);
  					$('#triforce').empty().append('<span>YOU WIN!!</span>');
  				}
- 		});
+ 			});
 	});
 });
 
